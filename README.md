@@ -18,7 +18,7 @@ crafted binary-serialized dictionary into the kernel, it is possible to trigger
 a virtual method invocation on an object with a controlled vtable pointer.~~
 
 rootsh is a local privilege escalation targeting OS X El Capitan 10.11.6 build
-15G31. It exploits [CVE-2016-4656] and [CVE-2016-4657] (Pegasus exploiuts),
+15G31. It exploits [CVE-2016-4656] and [CVE-2016-4657] \(Pegasus exploiuts),
 two vulnerabilities in XNU that were patched in OS X El Capitan [10.11.6].
 rootsh will not work on platforms with SMAP enabled.
 
