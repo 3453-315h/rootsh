@@ -18,27 +18,27 @@ crafted binary-serialized dictionary into the kernel, it is possible to trigger
 a virtual method invocation on an object with a controlled vtable pointer.~~
 
 rootsh is a local privilege escalation targeting OS X El Capitan 10.11.6 build
-15G31. It exploits [CVE-2016-4656] and [CVE-2016-4657] \(Pegasus exploiuts),
+15G31. It exploits [CVE-2016-4655] and [CVE-2016-4656] \(Pegasus exploiuts),
 two vulnerabilities in XNU that were patched in OS X El Capitan [10.11.6].
 rootsh will not work on platforms with SMAP enabled.
 
-### CVE-2016-4656
+### CVE-2016-4655
 
-CVE-2016-4656 is an information leak caused by copying big sized OSNumber with
+CVE-2016-4655 is an information leak caused by copying big sized OSNumber with
 kernel stack data to user space. Kernel pointers from stack can be masked to
 recover the kernel slide.
 
-### CVE-2016-4657
+### CVE-2016-4656
 
-CVE-2016-4657 is a use-after-free during object deserialization. By passing a
+CVE-2016-4656 is a use-after-free during object deserialization. By passing a
 crafted binary-serialized dictionary into the kernel, it is possible to trigger
 a virtual method invocation on an object with a controlled vtable pointer.
 It's a different vulnerabilty, then CVE-2016-1828.
 
 [CVE-2016-1758]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1758
 [CVE-2016-1828]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1828
+[CVE-2016-4655]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-4655
 [CVE-2016-4656]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-4656
-[CVE-2016-4657]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-4657
 [10.11.4]: https://support.apple.com/en-us/HT206167
 [10.11.5]: https://support.apple.com/en-us/HT206567
 [10.11.6]: https://support.apple.com/en-us/HT207130
