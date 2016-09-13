@@ -33,7 +33,7 @@ recover the kernel slide.
 CVE-2016-4656 is a use-after-free during object deserialization. By passing a
 crafted binary-serialized dictionary into the kernel, it is possible to trigger
 a virtual method invocation on an object with a controlled vtable pointer.
-It's a different vulnerabilty, then CVE-2016-1828.
+It's a different vulnerabilty, then [CVE-2016-1828].
 
 [CVE-2016-1758]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1758
 [CVE-2016-1828]: https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-1828
